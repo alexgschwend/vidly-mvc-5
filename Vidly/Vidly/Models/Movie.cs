@@ -19,8 +19,8 @@ namespace Vidly.Models
         public short NumberInStock { get; set; }
 
         public GenreType GenreType { get; set; }
-
-
+        
+        [Required]
         [Display(Name = "Genre")]
         public byte GenreTypeId { get; set; }
 
