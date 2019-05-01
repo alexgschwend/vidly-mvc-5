@@ -7,6 +7,8 @@ namespace Vidly.Models
     public class Movie
     {
         public int Id { get; set; }
+
+        [Required]
         public string Name { get; set; }
 
 
@@ -16,6 +18,7 @@ namespace Vidly.Models
 
         [Required]
         [Display(Name = "Number in Stock")]
+        [Range(1,20)]
         public short NumberInStock { get; set; }
 
         public GenreType GenreType { get; set; }
