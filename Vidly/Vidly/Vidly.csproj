@@ -232,6 +232,14 @@
     <Compile Include="Migrations\201905011339424_SetMovieNameRequired.Designer.cs">
       <DependentUpon>201905011339424_SetMovieNameRequired.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905051638083_SeedUsers.cs" />
+    <Compile Include="Migrations\201905051638083_SeedUsers.Designer.cs">
+      <DependentUpon>201905051638083_SeedUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905061940530_AddDrivingLicenseToApplicationUser.cs" />
+    <Compile Include="Migrations\201905061940530_AddDrivingLicenseToApplicationUser.Designer.cs">
+      <DependentUpon>201905061940530_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -241,6 +249,7 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
@@ -485,7 +494,8 @@
     <None Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Customers\CustomerForm.cshtml" />
-    <None Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\ReadOnlyList.cshtml" />
+    <None Include="Views\Movies\List.cshtml" />
     <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -532,6 +542,12 @@
     <EmbeddedResource Include="Migrations\201905011339424_SetMovieNameRequired.resx">
       <DependentUpon>201905011339424_SetMovieNameRequired.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905051638083_SeedUsers.resx">
+      <DependentUpon>201905051638083_SeedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905061940530_AddDrivingLicenseToApplicationUser.resx">
+      <DependentUpon>201905061940530_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -551,7 +567,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49333</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49334/</IISUrl>
+          <IISUrl>https://localhost:44300/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
