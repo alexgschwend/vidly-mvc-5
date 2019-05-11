@@ -240,6 +240,10 @@
     <Compile Include="Migrations\201905061940530_AddDrivingLicenseToApplicationUser.Designer.cs">
       <DependentUpon>201905061940530_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905111403174_NewMovieProperties.cs" />
+    <Compile Include="Migrations\201905111403174_NewMovieProperties.Designer.cs">
+      <DependentUpon>201905111403174_NewMovieProperties.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -547,6 +551,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905061940530_AddDrivingLicenseToApplicationUser.resx">
       <DependentUpon>201905061940530_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905111403174_NewMovieProperties.resx">
+      <DependentUpon>201905111403174_NewMovieProperties.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
